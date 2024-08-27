@@ -1,7 +1,29 @@
+/* CSS HEX */
+:root {
+    --raisin-black: #201e1fff;
+    --coquelicot: #ff4000ff;
+    --atomic-tangerine: #faaa8dff;
+    --antique-white: #feefddff;
+    --moonstone: #50b2c0ff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: var(--raisin-black);
+    color: var(--antique-white);
+    padding: 10px;
+    text-align: center;
+}
 /* Reset default styles */
 html, body {
     margin: 0;
     padding: 0;
+    background-color: var(--moonstone);
+    color: #333;
 }
 
 /* Set a base font size and line height */
@@ -23,28 +45,59 @@ meta[name="viewport"] {
     initial-scale: 1;
 }
 
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.recipe-card {
+    background-color: beige; /* Change the background color to beige */
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.recipe-card h3 {
+    margin-bottom: 5px;
+}
+
+.recipe-card p {
+    margin-bottom: 0;
+}
+
 /* Add some basic styles for mobile devices */
 @media (max-width: 768px) {
     /* Add your mobile-specific styles here */
-    .navbar {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navbar-item {
-        margin-bottom: 10px;
-    }
 }
-
 /* Desktop styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f2f2f2;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: var(--coquelicot);
+    padding: auto;
+    margin: auto;
 }
 
 .navbar-item {
     margin-right: 10px;
+    color: var(--antique-white);
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--antique-white);
+    border: var(--raisin-black);
+    cursor: pointer;
+}
+
+.navbar-item:hover {
+    background-color: var(--moonstone);
 }

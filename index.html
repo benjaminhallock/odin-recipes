@@ -3,30 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Recipe Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Welcome to the Recipe Website</h1>
     </header>
     <nav class="navbar">
         <ul>
             <li class="navbar-item"><a href="#">Home</a></li>
-            <li class="navbar-item"><a href="#">About</a></li>
+            <li class="navbar-item"><a href="#">Recipes</a></li>
             <li class="navbar-item"><a href="#">Contact</a></li>
+            <li class="navbar-item"><a href="#">About</a></li>
+            <li class="navbar-item"><a href="#">Login</a></li>
+            <li class="navbar-item"><a href="#">Sign Up</a></li>
+            <li class="navbar-item"><a href="#">Search</a></li>
+            <li class="navbar-item"><a href="#">Cart</a></li>
         </ul>
     </nav>
 
     <main>
         <section>
-            <h2>About</h2>
-            <p>This is a sample website.</p>
+            <h2>Recipes</h2>
+            <p>Explore delicious recipes from around the world.</p>
+        </section>
+
+        <section>
+            <h2>Featured Recipe</h2>
+            <article class="recipe-card">
+                <h3>Recipe Name</h3>
+                <img src="https://via.placeholder.com/450x150" alt="Recipe Image">
+                <p>Recipe Description</p>
+                <a href="#">View Recipe</a>
+            </article>
+        </section>
+
+        <section>
+            <h3>Recipe Grid</h3>
+            <div class="recipe-grid">
+                <div class="recipe-card">
+                    <img src="https://via.placeholder.com/50" alt="Recipe Image">
+                    <h3>Recipe Name 1</h3>
+                    <p>Average Cook Time: 30 minutes</p>
+                </div>
+                <div class="recipe-card">
+                    <img src="https://via.placeholder.com/50" alt="Recipe Image">
+                    <h3>Recipe Name 2</h3>
+                    <p>Average Cook Time: 45 minutes</p>
+                </div>
+                <div class="recipe-card">
+                    <img src="https://via.placeholder.com/50" alt="Recipe Image">
+                    <h3>Recipe Name 3</h3>
+                    <p>Average Cook Time: 60 minutes</p>
+                </div>
+                <div class="recipe-card">
+                    <img src="https://via.placeholder.com/50" alt="Recipe Image">
+                    <h3>Recipe Name 4</h3>
+                    <p>Average Cook Time: 30 minutes</p>
+                </div>
+                <div class="recipe-card">
+                    <img src="https://via.placeholder.com/50" alt="Recipe Image">
+                    <h3>Recipe Name 5</h3>
+                    <p>Average Cook Time: 45 minutes</p>
+                </div>
+                <div class="recipe-card">
+                    <img src="https://via.placeholder.com/50" alt="Recipe Image">
+                    <h3>Recipe Name 6</h3>
+                    <p>Average Cook Time: 60 minutes</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024</p>
+        <p>&copy; 2024 Recipe Website. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
